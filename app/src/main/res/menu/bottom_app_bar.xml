@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/homeFragment"
+        android:icon="@drawable/ic_home"
+        android:title="@string/home"
+        android:enabled="true"
+        android:contentDescription="@string/home"
+        />
+
+    <item
+        android:id="@+id/cartFragment"
+        android:icon="@drawable/shopping_cart"
+        android:title="@string/cart"
+        android:enabled="true"
+        android:contentDescription="@string/cart"
+        />
+
+    <item
+        android:id="@+id/messagesFragment"
+        android:icon="@drawable/message_chat_icon"
+        android:title="@string/message"
+        android:enabled="true"
+        android:contentDescription="@string/message"
+        />
+
+
+    <item
+        android:id="@+id/profileFragment"
+        android:icon="@drawable/profile_icon"
+        android:title="@string/profile"
+        android:enabled="true"
+        android:contentDescription="@string/profile"
+        />
+
+</menu>

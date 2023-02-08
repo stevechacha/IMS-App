@@ -1,3 +1,24 @@
 <resources>
     <string name="app_name">IMS App</string>
+    <string name="home">Home</string>
+    <string name="cart">Cart</string>
+    <string name="message">Message</string>
+    <string name="profile">Profile</string>
+
+    <string name="sign_up">Sign up</string>
+    <string name="sign_in">Sign in</string>
+    <string name="password" translatable="false">Password</string>
+    <string name="email_phone_hint" translatable="false">Email or Mobile Number</string>
+    <string name="name" translatable="false">Name</string>
+    <string name="email" translatable="false">Email</string>
+    <string name="phone_number" translatable="false">Phone Number</string>
+
+    <string name="forgot_password">Forgot password?</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="login">Login</string>
+
+    <string name="create_your_account">Create your account</string>
+    <string name="welcome_back">Welcome Back</string>
+    <string name="login_to_your_account_to_continue">Login to your account to continue</string>
+    <string name="don_t_have_an_account">Don\'t have an account?</string>
 </resources>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="com.example.imsapp.welcome.WelcomeFragment"
+        android:label="welcome_fragment"
+        tools:layout="@layout/welcome_fragment" >
+        <action
+            android:id="@+id/welcomeFragmentToLoginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/welcomeFragmentToRegisterFragment"
+            app:destination="@id/registerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.imsapp.login.LoginFragment"
+        android:label="login_fragment"
+        tools:layout="@layout/login_fragment" >
+        <action
+            android:id="@+id/loginFragmentToForgotPasswordFragment"
+            app:destination="@id/forgotPasswordFragment" />
+        <action
+            android:id="@+id/loginFragmentToHomeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/loginFragmentToRegisterFragment"
+            app:destination="@id/registerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.example.imsapp.register.RegisterFragment"
+        android:label="register_fragment"
+        tools:layout="@layout/register_fragment" >
+        <action
+            android:id="@+id/registerFragmentToLoginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/forgotPasswordFragment"
+        android:name="com.example.imsapp.forgot_password.ForgotPasswordFragment"
+        android:label="forgot_password_fragment"
+        tools:layout="@layout/forgot_password_fragment" />
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.imsapp.home.HomeFragment"
+        android:label="home_fragment"
+        tools:layout="@layout/home_fragment" >
+        <argument
+            android:name="hasBottomNav"
+            android:defaultValue="true"
+            app:argType="boolean" />
+    </fragment>
+    <fragment
+        android:id="@+id/cartFragment"
+        android:name="com.example.imsapp.cart.CartFragment"
+        android:label="cart_fragment"
+        tools:layout="@layout/cart_fragment" >
+
+        <argument
+            android:name="hasBottomNav"
+            android:defaultValue="true"
+            app:argType="boolean" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.imsapp.profile.ProfileFragment"
+        android:label="profile_fragment"
+        tools:layout="@layout/profile_fragment" >
+        <argument
+            android:name="hasBottomNav"
+            android:defaultValue="true"
+            app:argType="boolean" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/messagesFragment"
+        android:name="com.example.imsapp.messages.MessagesFragment"
+        android:label="messages_fragment"
+        tools:layout="@layout/messages_fragment">
+        <argument
+            android:name="hasBottomNav"
+            android:defaultValue="true"
+            app:argType="boolean" />
+    </fragment>
+</navigation>
