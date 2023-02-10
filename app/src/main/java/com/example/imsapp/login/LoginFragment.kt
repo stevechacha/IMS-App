@@ -21,7 +21,6 @@ class LoginFragment : Fragment(R.layout.login_fragment) {
     private val viewModel: LoginViewModel by viewModels()
     private val binding by viewBinding(LoginFragmentBinding::bind)
 
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?

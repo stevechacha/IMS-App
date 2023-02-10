@@ -26,6 +26,10 @@
 
     </style>
 
+    <style name="BottomNavigationViewTextStyle">
+        <item name="android:fontFamily">@font/montserrat_thin</item>
+    </style>
+
     <!--Splash Screen-->
     <style name="Theme.App.SplashScreen" parent="Theme.SplashScreen">
         <item name="windowSplashScreenBackground">@color/md_theme_light_background</item>

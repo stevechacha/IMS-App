@@ -52,10 +52,6 @@
         android:name="com.example.imsapp.home.HomeFragment"
         android:label="home_fragment"
         tools:layout="@layout/home_fragment" >
-        <argument
-            android:name="hasBottomNav"
-            android:defaultValue="true"
-            app:argType="boolean" />
     </fragment>
     <fragment
         android:id="@+id/cartFragment"
@@ -63,10 +59,6 @@
         android:label="cart_fragment"
         tools:layout="@layout/cart_fragment" >
 
-        <argument
-            android:name="hasBottomNav"
-            android:defaultValue="true"
-            app:argType="boolean" />
     </fragment>
 
     <fragment
@@ -74,10 +66,6 @@
         android:name="com.example.imsapp.profile.ProfileFragment"
         android:label="profile_fragment"
         tools:layout="@layout/profile_fragment" >
-        <argument
-            android:name="hasBottomNav"
-            android:defaultValue="true"
-            app:argType="boolean" />
 
     </fragment>
     <fragment
@@ -85,9 +73,5 @@
         android:name="com.example.imsapp.messages.MessagesFragment"
         android:label="messages_fragment"
         tools:layout="@layout/messages_fragment">
-        <argument
-            android:name="hasBottomNav"
-            android:defaultValue="true"
-            app:argType="boolean" />
     </fragment>
 </navigation>

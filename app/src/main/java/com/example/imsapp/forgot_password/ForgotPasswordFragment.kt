@@ -11,9 +11,8 @@ import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
 class ForgotPasswordFragment : Fragment(R.layout.forgot_password_fragment) {
-
-
     private lateinit var viewModel: ForgotPasswordViewModel
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

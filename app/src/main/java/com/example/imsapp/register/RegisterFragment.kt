@@ -18,19 +18,30 @@ import dagger.hilt.android.AndroidEntryPoint
 @AndroidEntryPoint
 class RegisterFragment : Fragment(R.layout.register_fragment) {
     private val viewModel: RegisterViewModel by viewModels()
-    private val binding by viewBinding(RegisterFragmentBinding::bind)
+
+    private lateinit var binding: RegisterFragmentBinding
+//    private val binding by viewBinding(RegisterFragmentBinding::bind)
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
-        return inflater.inflate(R.layout.register_fragment, container, false)
+    ): View {
+        binding= RegisterFragmentBinding.inflate(layoutInflater, container, false)
+        return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        setUpObservers()
+
+        binding.apply {
+            confirmBtm.setOnClickListener {
+                findNavController().navigate(R.id.registerFragmentToLoginFragment)
+            }
+
+        }
+
+//        setUpObservers()
     }
 
     private fun setUpObservers() {
